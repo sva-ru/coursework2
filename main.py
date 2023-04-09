@@ -48,7 +48,7 @@ class VkUser:
         res = requests.get(groups_url, params={**self.params, **groups_params})
         return res.json()
 
-# , desc='Download completed)
+
 def backup_photo(id_vk: str, token_yd: str, count_photo=5, ver_vk='5.131'):
     vk_client = VkUser(ver_vk)
     uploader = YaUploader(token_yd)
